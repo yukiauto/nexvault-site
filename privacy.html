@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NexVault – Chính sách quyền riêng tư / Privacy Policy</title>
+<style>
+  :root { --ink:#16302b; --sub:#4a615c; --line:#d6dedb; --bg:#f4f6f5; --accent:#1f6f5c; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#e6eeeb; --sub:#a9bab5; --line:#2c3d39; --bg:#10201c; --accent:#7cc7b2; } }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:32px 0 8px; }
+  p, li { color:var(--ink); }
+  .meta { color:var(--sub); font-size:.9rem; margin:0 0 24px; }
+  nav a, a { color:var(--accent); }
+  hr { border:0; border-top:1px solid var(--line); margin:48px 0; }
+  ul { padding-left:1.2rem; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#vi">Tiếng Việt</a> · <a href="#en">English</a></nav>
+
+<section id="vi" lang="vi">
+<h1>Chính sách quyền riêng tư của NexVault</h1>
+<p class="meta">Cập nhật: 12/11/2026</p>
+
+<p>NexVault là ứng dụng lưu và chia sẻ secret (mật khẩu, khoá, file cấu hình) giữa các thành viên trong một nhóm. NexVault <strong>không có máy chủ</strong>: không có tài khoản, không có quảng cáo, chúng tôi không thu thập dữ liệu của bạn và không dùng công cụ phân tích hay báo lỗi tự động. Ngoại lệ duy nhất là thư viện quét mã của Google, xem mục <a href="#vi-mlkit">Quét mã QR</a>.</p>
+
+<h2>Dữ liệu nằm ở đâu</h2>
+<ul>
+  <li>Secret, tên hiển thị và danh sách thành viên chỉ được lưu trên thiết bị của bạn, trong một file đã mã hoá. Khoá mã hoá được bảo vệ bằng PIN của app và (nếu bạn bật) khoá sinh trắc trong chip bảo mật của máy.</li>
+  <li>Khi bạn sync, dữ liệu đi <strong>trực tiếp</strong> giữa các thiết bị trong cùng workspace (qua Wi‑Fi cùng mạng hoặc IPv6), được mã hoá đầu cuối. Không có bên thứ ba nào, kể cả chúng tôi, nhận được dữ liệu này.</li>
+  <li>Tính năng sao lưu chỉ tạo file mã hoá bằng mật khẩu do bạn đặt, và chỉ lưu ở nơi bạn chọn.</li>
+</ul>
+
+<h2>Thông tin được chia sẻ với thành viên khác</h2>
+<p>Thành viên cùng workspace thấy tên hiển thị của bạn, mã thiết bị, lịch sử thao tác (ai đã tạo, xem, sao chép secret) và nội dung các secret trong workspace đó. Mã sync và mã mời chứa địa chỉ IP hiện tại của thiết bị và cổng kết nối, có hiệu lực trong thời gian ngắn. Nếu bạn gửi ảnh mã qua ứng dụng chat, ứng dụng đó sẽ thấy ảnh, nhưng chỉ thiết bị trong workspace mới giải mã được.</p>
+
+<h2>Quyền mà app sử dụng</h2>
+<ul>
+  <li><strong>Camera:</strong> chỉ để quét mã QR. Hình ảnh được xử lý ngay trên máy, NexVault không lưu hay gửi hình ảnh đi.</li>
+  <li><strong>Sinh trắc học (vân tay / khuôn mặt):</strong> do Android xử lý. NexVault không bao giờ nhận được dữ liệu sinh trắc học, chỉ nhận kết quả xác thực.</li>
+  <li><strong>Mạng:</strong> chỉ để kết nối trực tiếp với thiết bị của thành viên khi bạn chủ động sync hoặc tạo workspace.</li>
+</ul>
+
+<h2 id="vi-mlkit">Quét mã QR (Google ML Kit)</h2>
+<p>Việc nhận diện mã QR dùng thư viện Google ML Kit, chạy ngay trên máy. Theo <a href="https://developers.google.com/ml-kit/android-data-disclosure">công bố của Google</a>, ML Kit gửi về Google (mã hoá qua HTTPS) dữ liệu chẩn đoán và thống kê sử dụng: hãng và đời máy, phiên bản Android, tên gói và phiên bản app, mã định danh theo lượt cài đặt (không nhằm định danh người dùng), số liệu hiệu năng, định dạng và kích thước ảnh, mã lỗi. Google cho biết dữ liệu này không được chuyển cho bên thứ ba. Secret và nội dung workspace của bạn không bao giờ đi qua ML Kit.</p>
+
+<h2>Xoá dữ liệu</h2>
+<p>Bạn có thể xoá toàn bộ dữ liệu bằng mục <em>Cài đặt → Xoá mọi dữ liệu trên máy này</em>, hoặc gỡ ứng dụng. Dữ liệu đã sync sang thiết bị của thành viên khác vẫn nằm trên máy của họ; hãy nhờ họ xoá bạn khỏi workspace.</p>
+
+<h2>Trẻ em</h2>
+<p>NexVault là công cụ dành cho người dùng chuyên nghiệp, không hướng tới trẻ em dưới 13 tuổi.</p>
+
+<h2>Liên hệ</h2>
+<p>Câu hỏi về chính sách này: <a href="https://github.com/yukiauto/nexvault-site/issues">github.com/yukiauto/nexvault-site/issues</a>. Khi chính sách thay đổi, ngày cập nhật ở trên sẽ thay đổi theo.</p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>NexVault Privacy Policy</h1>
+<p class="meta">Last updated: November 12, 2026</p>
+
+<p>NexVault stores and shares secrets (passwords, keys, configuration files) among the members of a team. NexVault has <strong>no server</strong>: no accounts, no ads; we do not collect your data and use no analytics or automatic crash reporting. The only exception is Google's QR scanning library, see <a href="#en-mlkit">QR scanning</a>.</p>
+
+<h2>Where your data lives</h2>
+<ul>
+  <li>Secrets, display names and member lists are stored only on your device, in an encrypted file. The encryption key is protected by the app PIN and, if you enable it, a biometric-bound key in the device's secure hardware.</li>
+  <li>When you sync, data travels <strong>directly</strong> between devices in the same workspace (same Wi‑Fi network or IPv6), end-to-end encrypted. No third party, including us, receives it.</li>
+  <li>Backups are files encrypted with a password you choose, saved only where you choose.</li>
+</ul>
+
+<h2>What other members see</h2>
+<p>Members of a workspace see your display name, device ID, the activity history (who created, viewed or copied a secret) and the secrets in that workspace. Sync and invite codes contain your device's current IP address and port and expire after a short time. If you send a code image through a chat app, that app can see the image, but only devices in the workspace can decrypt it.</p>
+
+<h2>Permissions</h2>
+<ul>
+  <li><strong>Camera:</strong> only to scan QR codes. Frames are processed on the device; NexVault never stores or sends them.</li>
+  <li><strong>Biometrics (fingerprint / face):</strong> handled by Android. NexVault never receives biometric data, only the result of the check.</li>
+  <li><strong>Network:</strong> only to connect directly to members' devices when you start a sync or create a workspace.</li>
+</ul>
+
+<h2 id="en-mlkit">QR scanning (Google ML Kit)</h2>
+<p>QR recognition uses Google ML Kit, running on the device. According to <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google's disclosure</a>, ML Kit sends Google (encrypted over HTTPS) diagnostics and usage analytics: device manufacturer and model, Android version, app package name and version, a per-installation identifier not intended to identify a user, performance metrics, image format and size, and error codes. Google states this data is not transferred to third parties. Your secrets and workspace contents never pass through ML Kit.</p>
+
+<h2>Deleting your data</h2>
+<p>Use <em>Settings → Erase all data on this device</em> or uninstall the app. Data already synced to other members' devices stays on those devices; ask them to remove you from the workspace.</p>
+
+<h2>Children</h2>
+<p>NexVault is a tool for professionals and is not directed to children under 13.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="https://github.com/yukiauto/nexvault-site/issues">github.com/yukiauto/nexvault-site/issues</a>. When this policy changes, the date above changes too.</p>
+</section>
+</main>
+</body>
+</html>
